@@ -1,0 +1,37 @@
+{% load cms_tags menu_tags sekizai_tags cms_static static %}
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="/">Home</a>
+		  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul>
+                {% show_menu 0 100 100 100 %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style type="text/css">
+	.nav {
+	    padding-left: 0;
+	}
+	.nav li {
+	    /*display: inline;*/
+	    list-style-type: none;
+	    padding-right: 20px;
+	}
+	a {
+        text-decoration: none;
+    }
+	/*.container {
+	    width: 940px;
+	    margin: 0 auto
+	}*/
+	/*.content {
+	    float: left;
+	    width: 80%;
+	}*/
+</style>
